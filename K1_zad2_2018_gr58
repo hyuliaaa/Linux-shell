@@ -1,0 +1,6 @@
+#!bin/bash
+#half of the problem solved
+read file
+name=`head -1l $file`
+filename=`tail -1l $file`
+grep "$name" $filename | wc -l
