@@ -1,0 +1,11 @@
+#!/bin/bash
+read dirname
+mkdir $dirname
+cp b* $dirname
+rm *.c
+mv dir/?? $dirname
+num=`ls -ltr dir | wc -l`
+if (($num == 1 ))
+then
+  rmdir dir
+fi
