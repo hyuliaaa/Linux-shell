@@ -17,7 +17,7 @@ int main()
 	{
 		
 	char buff[5]={""};
-		lseek(fd,0,0); //sets the fd to the first character of the file
+		lseek(fd,0,0); //sets the fd to the first character of the file , the last zero is SEEK_SET, it sets for us to read form the 0-th position
 		read(fd,buff,i);
 		printf("%s",buff);
 		printf("\n");
