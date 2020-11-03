@@ -24,8 +24,10 @@ int main(int argc,char *argv[])
 		sprintf(str,"i=%d\n",i);
 		write(nfd,str,strlen(str));
 	}
+	close(nfd);
 	int fd3=dup(newfd);	
 	close(newfd);
+	printf("%d",fd3);
 	
 	for(int i=0; i<10; i++)
 	{
