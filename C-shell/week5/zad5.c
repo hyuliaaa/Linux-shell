@@ -37,15 +37,32 @@ int main(int argc, char *argv[])
 }
 
 //./a.out date ls ps
-current processs id 1577
-Tue Nov  3 17:30:01 EET 2020
-1578
-current processs id1577
-a.out  file  newfile  zad1.c  zad2.c  zad3.c  zad5.c
-1579
-current processs id 1577
-  PID TTY          TIME CMD
- 1577 pts/0    00:00:00 a.out
- 1580 pts/0    00:00:00 ps
-14086 pts/0    00:00:00 bash
-1580
+//current processs id 1577
+//Tue Nov  3 17:30:01 EET 2020
+//1578
+//current processs id1577
+//a.out  file  newfile  zad1.c  zad2.c  zad3.c  zad5.c
+//1579
+//current processs id 1577
+  //PID TTY          TIME CMD
+// 1577 pts/0    00:00:00 a.out
+// 1580 pts/0    00:00:00 ps
+//14086 pts/0    00:00:00 bash
+//1580
+
+
+
+
+
+
+                        |
+			|
+               parent  / \	child	
+	    1577      /    \	1578	
+		     /\	
+		    /  \     child
+parent	           /	\	 1579	
+1577				
+				
+				
+				
