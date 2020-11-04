@@ -20,3 +20,6 @@ else
 write ( 1, "\n d= ", 5 ); write ( 1, &d, 1 ) ;
 }
 
+//c=0
+//d=z
+//d=b
