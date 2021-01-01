@@ -16,3 +16,6 @@ main( int argc, char *argv[])
         write(fdi,"teacher",7);
         write(1,"py child",8);
 }
+//ffff:I am a student
+//output: I am a happy child
+//in file: I am a teacher
