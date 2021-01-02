@@ -1,23 +1,31 @@
 #include <stdio.h>
-#include <unistd.h>
 #include <sys/types.h>
-#include <fcntl.h>
+#include <unistd.h>
 #include <wait.h>
+#include <fcntl.h>
 int main(int argc, char *argv[])
 {
-	int fd=open(arv[1], O_RDWR);
-	int pid==fork();
-	if(pid==-1)
-	{
-		perror("Couldn;t fork");
+	int fd=open(argv[1], O_CREAT | O_WRONLY,0777);
+	if(fd==-1)
+	{	
+		printf("Cannot open");
 		return 1;
 	}
-	else if(pid >0)
+	int pid=fork();
+	if(pid==-1)
 	{
-		wait(&status);
+		perror("Cannot fork");
+	}
+	else if (pid > 0)
+	{
+		write(fd,"HELLO",5);
 	}
 	else
 	{
-		
-:wq	
-
+	int fd2=open(argv[2], O_CREAT | O_APPEND | O_WRONLY,0777);
+	close(1);
+	dup(fd2);
+	write(1, "HELLO", 5);
+        }	
+return 0;
+}
