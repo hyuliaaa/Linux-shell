@@ -27,3 +27,5 @@ int main(int argc, char *argv[])
 	}
 return 0;
 }
+//both of the process use the same file descriptor,it is inherited
+//output can be: hello1hello2 or hello2hello1
