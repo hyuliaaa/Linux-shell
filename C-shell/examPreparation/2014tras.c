@@ -35,3 +35,12 @@ int main(int argc, char *argv[])
 //във файла: 12345
 //           7
 //ст.изход: 12345
+/*
+int dup2(int oldfd, int newfd);
+   The dup2() system call performs the same task as dup(), but
+       instead of using the lowest-numbered unused file descriptor, it
+       uses the file descriptor number specified in newfd.  If the file
+       descriptor newfd was previously open, it is silently closed
+       before being reused.
+
+*/
