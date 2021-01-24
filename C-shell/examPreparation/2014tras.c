@@ -27,7 +27,11 @@ int main(int argc, char *argv[])
 		fd=open("asdf.txt", O_CREAT | O_WRONLY, 0644);
 		dup2(fd,1);
 		close(fd);
-		execlp("echo","echo","123456",NULL);
+		execlp("echo","echo","123456",NULL); //еко пуска един нов ред
 	}
 	return 0;
 }
+//Забележка: Когато пренасочим изходите на детето, тези на родителя си остават непроменени!
+//във файла: 12345
+//           7
+//ст.изход: 12345
