@@ -34,3 +34,9 @@ int main()
 	write(1,buf,nb1);
 }
 
+//std:output amazing planet is discovered!
+//in file: our place  is an amazing place!
+
+
+
+
